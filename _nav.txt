@@ -1,0 +1,57 @@
+=====================================================================
+ 모든 페이지 공통 조각 · 그대로 복사해서 붙이세요
+=====================================================================
+
+[1] <head> 안에 넣을 것
+---------------------------------------------------------------------
+<link rel="stylesheet" href="style.css">
+
+
+[2] <body> 바로 아래에 넣을 것 — 네비게이션
+---------------------------------------------------------------------
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">BU <span>LIKELION</span></a>
+    <button class="nav-toggle" aria-label="메뉴">MENU</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="activities.html">Activities</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+
+[3] </body> 바로 위에 넣을 것 — 푸터 + 맨위로 + 스크립트
+---------------------------------------------------------------------
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">BU LIKELION</div>
+      <p>전공과 상관없이, 아이디어를 직접 만들어 보는<br>보스턴대학교 멋쟁이사자처럼 챕터</p>
+    </div>
+    <div>
+      <h4>SITEMAP</h4>
+      <a href="about.html">About</a>
+      <a href="team.html">Team</a>
+      <a href="activities.html">Activities</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <div>
+      <h4>CONTACT</h4>
+      <a href="https://instagram.com/likelion.bu">Instagram</a>
+      <a href="contact.html">Email</a>
+      <a href="https://us.likelion.net">LIKELION US</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 LIKELION US · BOSTON UNIVERSITY CHAPTER</div>
+    <div>BUILD YOUR NEXT.</div>
+  </div>
+</footer>
+
+<button class="totop" aria-label="맨 위로">TOP ↑</button>
+<script src="main.js"></script>
