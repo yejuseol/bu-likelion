@@ -25,6 +25,18 @@
 
 `style.css` `main.js` `_nav.txt` `README.md` 는 운영진 관리 파일입니다.
 
+## 로고 파일
+
+| 파일 | 쓰는 곳 |
+|---|---|
+| `bu-seal.png` | BU 실 · 네비 · 푸터 · 파비콘 |
+| `logo-white.svg` | 어두운 배경 (`section dark`, 네비, 푸터) |
+| `logo-black.svg` | 밝은 배경 |
+| `logo-color.svg` | 밝은 배경 · 사자 심볼 주황 |
+
+넣는 법 — `<img src="logo-black.svg" alt="LIKELION US" style 금지>`
+크기는 `style.css` 에서 잡혀 있으니 높이를 따로 지정할 일이 있으면 단톡방에 요청하세요.
+
 ---
 
 ## 움직이는 기능

@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var dur = 900, t0 = performance.now();
     (function step(now) {
       var p = Math.min((now - t0) / dur, 1);
-      el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))).toLocaleString();
+      el.textContent = String(Math.round(to * (1 - Math.pow(1 - p, 3))));
       if (p < 1) requestAnimationFrame(step);
     })(t0);
   }

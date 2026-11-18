@@ -40,9 +40,11 @@ a{color:inherit}
 .nav.scrolled{box-shadow:0 var(--bd) 0 var(--orange)}
 .nav-inner{max-width:1160px;margin:0 auto;padding:14px 32px;position:relative;
   display:flex;align-items:center;justify-content:space-between}
-.nav-logo{font-family:'Montserrat',sans-serif;font-weight:900;font-size:19px;
-  color:var(--white);text-decoration:none;letter-spacing:-.01em}
-.nav-logo span{color:var(--orange)}
+/* 로고 락업 · BU 실 + LIKELION US 워드마크 */
+.nav-logo{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
+.nav-logo .logo-seal{height:30px;width:auto;display:block}
+.nav-logo .logo-mark{height:16px;width:auto;display:block;
+  padding-left:11px;border-left:2px solid #4A443C}
 .nav-links{display:flex;gap:4px}
 .nav-links a{color:#D6D0C4;text-decoration:none;font-size:13px;font-weight:700;
   padding:7px 12px;border:2px solid transparent;transition:.12s}
@@ -121,16 +123,14 @@ a{color:inherit}
 .card.dark .card-text{color:#C9C3BC}
 
 /* ---------- 숫자 ---------- */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border:var(--bd) solid var(--ink);background:var(--white)}
-.stat{padding:26px 22px;border-right:var(--bd) solid var(--ink)}
-.stat:last-child{border-right:0}
+/* 칸 개수가 몇 개든 구분선이 알아서 맞습니다 */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:var(--bd);background:var(--ink);border:var(--bd) solid var(--ink)}
+.stat{background:var(--white);padding:26px 22px}
+.section.dark .stat{background:var(--ink);color:var(--white)}
 .stat-num{font-family:'Montserrat',sans-serif;font-size:42px;font-weight:900;line-height:1;letter-spacing:-.03em}
 .stat-label{font-size:13px;font-weight:700;color:var(--gray);margin-top:8px}
-@media(max-width:760px){
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(2n){border-right:0}
-  .stat:nth-child(-n+2){border-bottom:var(--bd) solid var(--ink)}
-}
+.section.dark .stat-label{color:#A8A296}
 
 /* ---------- 가로 스크롤 ---------- */
 .hscroll{display:flex;gap:20px;overflow-x:auto;padding:6px 6px 22px;scroll-snap-type:x mandatory}
@@ -212,7 +212,19 @@ a{color:inherit}
   letter-spacing:.14em;margin-bottom:14px}
 .footer a{display:block;color:#A8A296;text-decoration:none;font-size:14px;padding:4px 0}
 .footer a:hover{color:var(--yellow)}
+.footer-logo{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.footer-logo .logo-seal{height:40px;width:auto;display:block}
+.footer-logo .logo-mark{height:21px;width:auto;display:block;
+  padding-left:14px;border-left:2px solid #3A352F}
 .footer-brand{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:900;
   color:var(--white);margin-bottom:10px}
 .footer-bottom{max-width:1160px;margin:34px auto 0;padding:18px 32px 0;border-top:1px solid #2E2B26;
   display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px;letter-spacing:.08em}
+
+.faq-more{margin-top:24px}
+
+@media(max-width:760px){
+  .nav-logo{gap:9px}
+  .nav-logo .logo-seal{height:26px}
+  .nav-logo .logo-mark{height:13px;padding-left:9px}
+}

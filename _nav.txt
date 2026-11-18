@@ -4,6 +4,7 @@
 
 [1] <head> 안에 넣을 것
 ---------------------------------------------------------------------
+<link rel="icon" href="bu-seal.png">
 <link rel="stylesheet" href="style.css">
 
 
@@ -11,7 +12,10 @@
 ---------------------------------------------------------------------
 <nav class="nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="index.html">BU <span>LIKELION</span></a>
+    <a class="nav-logo" href="index.html" aria-label="BU LIKELION US">
+      <img class="logo-seal" src="bu-seal.png" alt="Boston University">
+      <img class="logo-mark" src="logo-white.svg" alt="LIKELION US">
+    </a>
     <button class="nav-toggle" aria-label="메뉴">MENU</button>
     <div class="nav-links">
       <a href="index.html">Home</a>
@@ -30,7 +34,10 @@
 <footer class="footer">
   <div class="footer-grid">
     <div>
-      <div class="footer-brand">BU LIKELION</div>
+      <div class="footer-logo">
+        <img class="logo-seal" src="bu-seal.png" alt="Boston University">
+        <img class="logo-mark" src="logo-white.svg" alt="LIKELION US">
+      </div>
       <p>전공과 상관없이, 아이디어를 직접 만들어 보는<br>보스턴대학교 멋쟁이사자처럼 챕터</p>
     </div>
     <div>
