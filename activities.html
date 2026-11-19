@@ -1,82 +1,53 @@
-<!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Activities | BU LIKELION US</title>
-<link rel="icon" href="bu-seal.png">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="nav-logo" href="index.html" aria-label="BU LIKELION US">
-      <img class="logo-seal" src="bu-seal.png" alt="Boston University">
-      <img class="logo-mark" src="logo-white.svg" alt="LIKELION US">
-    </a>
-    <button class="nav-toggle" aria-label="메뉴">MENU</button>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <a href="activities.html">Activities</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<section class="section">
+<section class="section" aria-labelledby="activities-title">
   <div class="container">
     <div class="section-label mono reveal">ACTIVITIES</div>
-    <h2 class="section-title reveal">Activities</h2>
+    <h2 class="section-title reveal" id="activities-title">Activities</h2>
     <p class="section-sub reveal">정기 모임 기록</p>
 
-<!-- =====================================================
-     담당자가 채우는 부분
-     학기별 섹션 + GM 하나당 카드 하나
-     카드 : card-label(회차) / card-title(제목) / card-text(한 줄) / tag
+    <div class="cohort">
+      <h3 class="cohort-title reveal">2026년 가을학기</h3>
 
-     * 나타나는 효과를 주려면 태그에 class="reveal" 추가
-     * 숫자를 세어 올리려면 <span class="count" data-to="60">0</span>
-     ===================================================== -->
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="card-label accent">GM 02 · <time datetime="2026-09-30">09.30</time></div>
+          <h4 class="card-title">GitHub와 바이브코딩</h4>
+          <p class="card-text">브랜치, 커밋, Pull Request로 협업하는 흐름을 살펴보고, AI로 자기소개 페이지를 만들어 GitHub Pages에 배포하는 실습을 했습니다.</p>
+          <span class="tag">GitHub</span>
+          <span class="tag">웹 배포</span>
+        </article>
 
-    <div class="wip reveal"><p class="muted">준비 중</p></div>
+        <article class="card reveal">
+          <div class="card-label accent">GM 03 · <time datetime="2026-10-07">10.07</time></div>
+          <h4 class="card-title">AI 똑똑하게 쓰기</h4>
+          <p class="card-text">LLM이 답을 생성하는 원리와 프롬프트 작성법을 살펴봤습니다. 같은 프롬프트에 대한 AI 도구별 답변을 비교하고, 채용과 신용 심사 사례를 바탕으로 AI의 편향과 책임을 토론했습니다.</p>
+          <span class="tag">생성형 AI</span>
+          <span class="tag">프롬프트</span>
+        </article>
 
+        <article class="card reveal">
+          <div class="card-label accent">GM 04 · <time datetime="2026-10-14">10.14</time></div>
+          <h4 class="card-title">자료형과 연산자, 그리고 속도</h4>
+          <p class="card-text">파이썬의 자료형, 형변환, 연산자를 퀴즈로 복습했습니다. 데이터 크기를 바꿔 가며 리스트와 집합에서 값의 포함 여부를 확인하는 데 걸리는 시간을 비교했습니다.</p>
+          <span class="tag">Python</span>
+          <span class="tag">자료구조</span>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-label accent">GM 05 · <time datetime="2026-10-28">10.28</time></div>
+          <h4 class="card-title">직무와 고객, 그리고 방법론</h4>
+          <p class="card-text">PM의 역할과 워터폴·애자일 방법론을 살펴봤습니다. 조별로 페르소나와 상황을 골라 고객 여정 지도를 그리고, 단계별 행동과 감정에서 불편한 지점과 개선 기회를 찾았습니다.</p>
+          <span class="tag">제품 기획</span>
+          <span class="tag">고객 여정 지도</span>
+        </article>
+
+        <article class="card accent reveal">
+          <div class="card-label accent">GM 06 · <time datetime="2026-11-18">11.18</time></div>
+          <h4 class="card-title">챕터 웹사이트 제작</h4>
+          <p class="card-text">두 차례에 걸쳐 진행하는 웹사이트 워크숍의 첫 모임입니다. 멤버별로 페이지를 맡아 공통 스타일에 맞춰 HTML을 작성하고, GitHub Pull Request로 변경사항을 모으는 과정을 실습했습니다.</p>
+          <span class="tag">웹 제작</span>
+          <span class="tag">GitHub 협업</span>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
-
-<footer class="footer">
-  <div class="footer-grid">
-    <div>
-      <div class="footer-logo">
-        <img class="logo-seal" src="bu-seal.png" alt="Boston University">
-        <img class="logo-mark" src="logo-white.svg" alt="LIKELION US">
-      </div>
-      <p>전공과 상관없이, 아이디어를 직접 만들어 보는<br>보스턴대학교 멋쟁이사자처럼 챕터</p>
-    </div>
-    <div>
-      <h4>SITEMAP</h4>
-      <a href="about.html">About</a>
-      <a href="team.html">Team</a>
-      <a href="activities.html">Activities</a>
-      <a href="projects.html">Projects</a>
-    </div>
-    <div>
-      <h4>CONTACT</h4>
-      <a href="https://instagram.com/likelion.bu">Instagram</a>
-      <a href="contact.html">Email</a>
-      <a href="https://us.likelion.net">LIKELION US</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div>© 2026 LIKELION US · BOSTON UNIVERSITY CHAPTER</div>
-    <div>BUILD YOUR NEXT.</div>
-  </div>
-</footer>
-
-<button class="totop" aria-label="맨 위로">TOP ↑</button>
-<script src="main.js"></script>
-</body>
-</html>
